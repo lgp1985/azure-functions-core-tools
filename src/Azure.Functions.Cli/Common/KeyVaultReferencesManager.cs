@@ -11,7 +11,7 @@ using static Azure.Functions.Cli.Common.OutputTheme;
 
 namespace Azure.Functions.Cli.Common
 {
-    class KeyVaultReferencesManager
+    public class KeyVaultReferencesManager
     {
         private const string vaultUriSuffix = "vault.azure.net";
         private static readonly Regex BasicKeyVaultReferenceRegex = new Regex(@"^@Microsoft\.KeyVault\((?<ReferenceString>.*)\)$", RegexOptions.Compiled);
